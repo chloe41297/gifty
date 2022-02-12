@@ -5,7 +5,13 @@ import NavBar from "../components/NavBar";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div>
-      <NavBar></NavBar>
+      <NavBar
+        backBtn={true}
+        header={"main"}
+        giftBtn={true}
+        cartBtn={true}
+        accountBtn={true}
+      ></NavBar>
       <Component {...pageProps} />
     </div>
   );
